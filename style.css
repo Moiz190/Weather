@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'FontAwesome';
+}
+.bg-sky{ 
+    background: linear-gradient(to bottom , skyblue, #B1ABFC);
+}
+.flex{
+    display: flex;
+}
+.column{
+    flex-direction: column;
+}
+.align-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.text-white{
+    color: #ffffff;
+}
+.fs-1{
+    font-size: 1.7rem;
+}
+.pl-1{
+    padding-left: 0.3rem;
+}
+.bold{
+    font-weight: bold;
+}
+.weather-container{
+    height: 100vh;
+    background:url(https://static.radulescu.me/examples/clouds/clouds1000.png) 1rem,
+     url(https://static.radulescu.me/examples/clouds/clouds1200_1.png) 1rem,
+     url(https://static.radulescu.me/examples/clouds/clouds1000.png) 1rem,
+     url(https://static.radulescu.me/examples/clouds/clouds1000_blur3.png) 1rem;
+     animation: wind 20s linear infinite;
+}
+.height-70{
+    height: 70vh;
+}
+.nav-bar{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+.nav-bar ul{
+    list-style-type: none;
+}
+.nav-bar ul li{
+    padding: 0 2rem;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    padding: 0.7rem 1rem;
+    transition: 0.7s;
+    border-radius: 7px;
+}
+.nav-bar ul li a:hover{
+    color:blue;
+    background-color: #ffffff;
+}
+.grid-container{
+    max-width: 850px;
+    border-radius: 7px;
+    padding: 0.5rem;
+    display: grid;
+    background-color: #ffffff;
+    gap: 0.5rem;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 16.875rem 13.125rem;
+}
+.item-1{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.item-1 > div{
+    width: 30%;
+    margin:3rem auto;
+}
+.grid-item > div{
+    transition: 0.6s;
+    cursor: pointer;
+} 
+.grid-item >div:hover {
+    transform: translateY(-8%);
+    color: rgba(0, 0, 255, 0.724);
+}
+.item-2 >div:hover , .item-3 >div:hover, .item-4 >div:hover{
+    color: #577d95fa;
+}
+.grid-item{
+    text-align: center;
+    min-width: 200px;
+}
+.grid-item h2, .grid-item h3{
+    padding-bottom: 0.5rem;
+}
+@keyframes wind {
+    0% {
+      background-position: 0 200px, 0 300px, 100px 250px;
+    }
+    100% {
+      background-position: 1000px 200px, 1200px 300px, 1100px 250px;
+    }
+  }
+@media (max-width:860px) {
+    .grid-container{
+        transform: scale(0.6,0.6);
+    } 
+    .nav-bar{
+        transform: scale(0.7,0.7);
+    }   
+}
+@media (max-width:540px) {
+    .grid-container{
+        transform: scale(0.35,0.35);
+    }
+    .nav-bar{
+        transform: scale(0.45,0.45);
+    }   
+}
