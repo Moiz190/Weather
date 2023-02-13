@@ -44,8 +44,8 @@ body{
      url(https://static.radulescu.me/examples/clouds/clouds1000_blur3.png) 1rem;
      animation: wind 20s linear infinite;
 }
-.height-70{
-    height: 70vh;
+.min-h-70{
+    min-height: 70vh;
 }
 .nav-bar{
     padding-top: 3rem;
