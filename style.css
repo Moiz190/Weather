@@ -37,7 +37,7 @@ body{
     font-weight: bold;
 }
 .weather-container{
-    height: 100vh;
+    min-height: 100vh;
     background:url(https://static.radulescu.me/examples/clouds/clouds1000.png) 1rem,
      url(https://static.radulescu.me/examples/clouds/clouds1200_1.png) 1rem,
      url(https://static.radulescu.me/examples/clouds/clouds1000.png) 1rem,
