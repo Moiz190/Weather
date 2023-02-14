@@ -125,5 +125,7 @@ body{
     }
     .nav-bar{
         transform: scale(0.45,0.45);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }   
 }
